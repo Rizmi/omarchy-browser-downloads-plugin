@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser Download Streamer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="title-row">
+      <img src="icon.svg" class="logo" alt="logo" width="20" height="20">
+      <h2 id="header-title">Browser Downloads</h2>
+    </div>
+    <div class="header-actions">
+      <div id="host-status" class="status-badge checking">Checking...</div>
+      <button id="btn-settings-toggle" class="icon-btn" title="Settings">⚙</button>
+    </div>
+  </div>
+
+  <!-- Downloads View -->
+  <div id="view-downloads">
+    <div id="downloads-list" class="downloads-container">
+      <div class="empty-state">No active downloads</div>
+    </div>
+  </div>
+
+  <!-- Settings View -->
+  <div id="view-settings" class="settings-container hidden">
+    <div class="settings-section">
+      <div class="settings-title">STREAM STATUS</div>
+      <div class="settings-row">
+        <span class="label">Native Host</span>
+        <span id="settings-native-status" class="val-badge">Active</span>
+      </div>
+      <div class="settings-row">
+        <span class="label">IPC Stream</span>
+        <span class="val-code">/tmp/browser-downloads.json</span>
+      </div>
+      <div class="settings-row">
+        <span class="label">Update Rate</span>
+        <span class="val-text">4 Hz (250ms throttled)</span>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <div class="settings-title">OMARCHY STATUS BAR</div>
+      <div class="settings-hint">
+        Click the ⚙ icon in your Omarchy status bar panel to toggle:
+      </div>
+      <ul class="settings-features">
+        <li>• <b>Hide When Idle</b></li>
+        <li>• <b>Show Download Speed</b></li>
+        <li>• <b>Show Percentage</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span id="footer-text">Streams to: <code>/tmp/browser-downloads.json</code></span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

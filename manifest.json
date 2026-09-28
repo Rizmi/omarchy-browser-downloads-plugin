@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.rizmi.browser-downloads",
+  "name": "Browser Downloads",
+  "version": "1.0.0",
+  "author": "Omarchy Community",
+  "license": "MIT",
+  "description": "Live download monitor for Firefox, Zen Browser, and Gecko browsers in the Omarchy status bar with a detailed popup panel.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Browser Downloads",
+    "description": "Shows active download speeds, progress, and remaining size in the status bar",
+    "category": "Network",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "hideWhenIdle": false,
+      "showSpeed": true,
+      "showPercent": true,
+      "fileManagerCommand": "nautilus",
+      "downloadsFolder": ""
+    },
+    "schema": [
+      {
+        "key": "hideWhenIdle",
+        "type": "boolean",
+        "label": "Hide widget from bar when no downloads are active",
+        "defaultValue": false
+      },
+      {
+        "key": "showSpeed",
+        "type": "boolean",
+        "label": "Show download speed in bar text",
+        "defaultValue": true
+      },
+      {
+        "key": "showPercent",
+        "type": "boolean",
+        "label": "Show percentage in bar text",
+        "defaultValue": true
+      },
+      {
+        "key": "fileManagerCommand",
+        "type": "string",
+        "label": "Command to open folders (e.g. nautilus, strata, xdg-open)",
+        "defaultValue": "nautilus"
+      },
+      {
+        "key": "downloadsFolder",
+        "type": "string",
+        "label": "Custom downloads folder path (leave empty for default ~/Downloads)",
+        "defaultValue": ""
+      }
+    ]
+  }
+}

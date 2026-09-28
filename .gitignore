@@ -1,0 +1,8 @@
+*.qmlc
+.qmlls.ini
+*.swp
+*~
+.DS_Store
+__pycache__/
+*.pyc
+.fuse_hidden*

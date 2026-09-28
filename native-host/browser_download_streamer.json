@@ -1,0 +1,9 @@
+{
+  "name": "browser_download_streamer",
+  "description": "Streams browser download status to local system",
+  "path": "/usr/local/bin/browser_download_streamer.py",
+  "type": "stdio",
+  "allowed_extensions": [
+    "browser-download-streamer@rizmi.dev"
+  ]
+}
