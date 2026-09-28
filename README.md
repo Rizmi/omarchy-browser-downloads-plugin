@@ -63,7 +63,7 @@ The companion extension is verified and signed by Mozilla, allowing it to instal
 
 #### Option A: Install from Mozilla Add-ons (Recommended)
 Install directly into your browser with one click:
-👉 **[Install Browser Download Streamer](https://addons.mozilla.org/firefox/addon/browser-download-streamer/)** *(Placeholder URL)*
+👉 **[Install Browser Download Streamer](https://addons.mozilla.org/firefox/addon/browser-download-streamer/)**
 
 #### Option B: Install Manually from Repository
 If installing offline or from source:
