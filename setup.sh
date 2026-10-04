@@ -8,7 +8,7 @@ HOST_DIR="$HOME/.mozilla/native-messaging-hosts"
 
 mkdir -p "$BIN_DIR" "$HOST_DIR"
 
-echo "Registering Browser Downloads native messaging host..."
+echo "Registering Downlink native messaging host..."
 
 # 1. Install streamer binary
 TARGET_BIN="$BIN_DIR/browser_download_streamer.py"

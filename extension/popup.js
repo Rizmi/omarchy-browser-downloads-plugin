@@ -39,7 +39,7 @@ btnSettings.addEventListener("click", () => {
     viewSettings.classList.add("hidden");
     viewDownloads.classList.remove("hidden");
     btnSettings.classList.remove("active");
-    headerTitle.textContent = "Browser Downloads";
+    headerTitle.textContent = "Downlink";
   }
 });
 

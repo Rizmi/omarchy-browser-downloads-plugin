@@ -1,9 +1,9 @@
-# Browser Downloads — Omarchy Bar Widget
+# Downlink — Omarchy Bar Widget
 
 A lightweight, modern, and native [Omarchy](https://omarchy.org/) status bar widget and control panel to track and control active file downloads from **Firefox, Zen Browser, Floorp, LibreWolf, and Gecko-based browsers** in real time.
 
 <p align="center">
-  <img height="400" alt="Browser Downloads live panel" src="screenshot.png" />
+  <img height="400" alt="Downlink live panel" src="screenshot.png" />
 </p>
 
 ---

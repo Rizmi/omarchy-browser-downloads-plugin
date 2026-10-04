@@ -131,7 +131,7 @@ Panel {
         PanelHero {
           id: hero
           width: parent.width
-          title: root.inSettingsView ? "Settings" : "Browser Downloads"
+          title: root.inSettingsView ? "Settings" : "Downlink"
           meta: root.inSettingsView ? "Customize status bar display" : (downloadManager ? downloadManager.summaryText : "Checking status...")
           foreground: root.foreground
           fontFamily: root.fontFamily

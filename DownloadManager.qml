@@ -35,7 +35,7 @@ Item {
 
   property string summaryText: "No active downloads"
   property string barText: ""
-  property string barTooltip: "Browser Downloads: Idle"
+  property string barTooltip: "Downlink: Idle"
 
   function formatBytes(bytes) {
     var b = Number(bytes)
@@ -150,11 +150,11 @@ Item {
       if (compCount > 0) {
         root.barText = compCount === 1 ? "1 Complete" : compCount + " Complete"
         root.summaryText = compCount === 1 ? "1 completed download" : compCount + " completed downloads"
-        root.barTooltip = "Browser Downloads: " + compCount + " completed"
+        root.barTooltip = "Downlink: " + compCount + " completed"
       } else {
         root.barText = ""
         root.summaryText = "No active downloads"
-        root.barTooltip = "Browser Downloads: Idle\nRight-click to open Downloads folder"
+        root.barTooltip = "Downlink: Idle\nRight-click to open Downloads folder"
       }
       return
     }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "io.github.rizmi.browser-downloads",
-  "name": "Browser Downloads",
+  "name": "Downlink",
   "version": "1.0.0",
   "author": "Omarchy Community",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "barWidget": "BarWidget.qml"
   },
   "barWidget": {
-    "displayName": "Browser Downloads",
+    "displayName": "Downlink",
     "description": "Shows active download speeds, progress, and remaining size in the status bar",
     "category": "Network",
     "allowMultiple": false,

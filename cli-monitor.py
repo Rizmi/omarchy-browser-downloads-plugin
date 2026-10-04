@@ -61,13 +61,13 @@ def read_data():
 def display_dashboard(data):
     if not data or not data.get("downloads"):
         print("\033[2J\033[H", end="")
-        print("\033[1;36m=== Browser Download Monitor ===\033[0m")
+        print("\033[1;36m=== Downlink Monitor ===\033[0m")
         print("\033[90mNo active downloads.\033[0m")
         return
 
     downloads = data.get("downloads", [])
     print("\033[2J\033[H", end="")
-    print(f"\033[1;36m=== Browser Download Monitor ({len(downloads)} tracking) ===\033[0m\n")
+    print(f"\033[1;36m=== Downlink Monitor ({len(downloads)} tracking) ===\033[0m\n")
 
     for dl in downloads:
         fname = dl.get("filename", "Unknown")
